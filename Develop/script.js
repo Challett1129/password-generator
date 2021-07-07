@@ -14,6 +14,18 @@ const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 console.log(lowerAlph, upperAlph);
 
+//prompt asking how long the password needs to be 
+confirmLength = parseInt.confirmLength;
+var confirmLength = prompt("How many characters would you like your password (You may choose a number between 8 and 128 characters.)");
+console.log(confirmLength);
+if(confirmLength < 8 || confirmLength > 128) {
+  alert("You have entered an invalid number. The number must be between 8 and 128. Try again");
+  confirmLength;
+}
+//using alerts, ask what characters should be allowed in the password 
+
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
