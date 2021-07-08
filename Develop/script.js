@@ -24,7 +24,7 @@ var pickedChars;
 function confirmLength() {
  passLength = parseInt(prompt("How long would you like your password to be? Please choose a number between 8 and 128 characters."));
   if (!/^[0-9.]/.test(passLength)) {
-    alert("That is not a valid response. Please enter a nu/mber between 8 and 128");
+    alert("That is not a valid response. Please enter a number between 8 and 128");
     confirmLength(); 
   }
   if(passLength < 8 || passLength > 128) {
